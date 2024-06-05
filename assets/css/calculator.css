@@ -1,0 +1,902 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.button {
+  height: 30px;
+  width: 30px;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+
+/*! mobil start  */
+/*? default mode start  */
+
+.default-container {
+  background-color: #3a4663;
+  margin: 0 auto;
+  font-family: "League Spartan", sans-serif;
+  padding-block: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* default header start  */
+
+.default-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.button {
+  display: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.tri-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tri-state-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70px;
+  color: white;
+}
+
+.tri-state-theme {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: end;
+  align-items: end;
+  color: white;
+}
+
+.tri-state-theme p {
+font-size: 12px;
+font-weight: 700;
+line-height: 11.04px;
+letter-spacing: 1px;
+text-align: center;
+}
+
+.tri-state-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  border: 3px solid #242d44;
+  border-radius: 50px;
+  background-color: #242d44;
+}
+
+#one {
+  opacity: 1;
+  background-color: red;
+}
+
+#one:checked ~ .label-one {
+  opacity: 1;
+  background-color: red;
+}
+
+#two:checked ~ .label-two {
+  opacity: 1;
+  background-color: #C85402;
+}
+
+#three:checked ~ .label-three {
+  opacity: 1;
+  background-color: #00DED0;
+}
+
+.label-one,
+.label-two,
+.label-three {
+  height: 30px;
+  width: 30px;
+  appearance: none;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+/* default header end  */
+
+/* default screen start  */
+
+.default-screen {
+  background-color: #181f33;
+  width: 327px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.default-screen h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36.8px;
+  letter-spacing: -0.6666666865348816px;
+  padding-right: 24px;
+  text-align: right;
+  color: white;
+  padding-block: 26px;
+}
+
+/* default screen end  */
+
+/* default keyboard start  */
+
+.default-keyboards {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #242d44;
+  padding: 24px;
+  margin: 0 auto;
+  width: 327px;
+  border-radius: 10px;
+  margin-bottom: 31px;
+}
+
+.default-keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin: 0 auto;
+}
+
+.default-keyboard button {
+  width: 60px;
+  padding-block: 13px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #434a59;
+  border-radius: 8px;
+  background-color: #eae3dc;
+  box-shadow: 0px -4px 0px 0px #b3a497 inset;
+  border: none;
+}
+
+.default-keyboard .del {
+  background-color: #414e73;
+  color: #ffffff;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+.default-keyboard-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.default-keyboard-bottom button {
+  width: 133px;
+  padding-block: 13px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.reset {
+  background-color: #414e73;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+.equal {
+  background-color: red;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+}
+
+/* default keyboard end  */
+
+/*? default mode end  */
+
+/*? light mode start  */
+
+.light-mode-container {
+  background-color: #e6e6e6;
+  margin: 0 auto;
+  font-family: "League Spartan", sans-serif;
+  padding-block: 30px;
+}
+
+/* light header start  */
+
+.light-mode-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.light-theme p {
+  color: #36362C;
+}
+
+.light-toogle {
+  background-color: #D2CDCD;
+  border: 3px solid #d2cdcd;
+
+}
+
+/* light header end  */
+
+/* light screen start  */
+
+.light-mode-screen {
+  background-color: #eeeeee;
+  width: 327px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.light-mode-screen h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36.8px;
+  letter-spacing: -0.6666666865348816px;
+  padding-right: 24px;
+  text-align: right;
+  color: #36362c;
+  padding-block: 26px;
+}
+
+/* light screen end  */
+
+/* light keyboard start  */
+
+.light-mode-keyboards {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #d2cdcd;
+  padding: 24px;
+  margin: 0 auto;
+  width: 327px;
+  border-radius: 10px;
+  margin-bottom: 31px;
+}
+
+.light-mode-keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin: 0 auto;
+}
+
+.light-mode-keyboard button {
+  width: 60px;
+  padding-block: 13px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #36362c;
+  border-radius: 8px;
+  background-color: #e5e4e1;
+  border: none;
+  box-shadow: 0px -4px 0px 0px #a79e91 inset;
+}
+
+.light-mode-keyboard .light-del {
+  background-color: #378187;
+  color: #ffffff;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+}
+
+.light-mode-keyboard-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.light-mode-keyboard-bottom button {
+  width: 133px;
+  padding-block: 13px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.light-reset {
+  background-color: #378187;
+  box-shadow: 0px -4px 0px 0px #1b6066 inset;
+}
+
+.light-equal {
+  background-color: #c85402;
+  box-shadow: 0px -4px 0px 0px #873901 inset;
+}
+
+/* light keyboard end  */
+
+/*? light mode end  */
+
+/*? dark mode start  */
+
+.dark-mode-container {
+  background-color: #17062a;
+  margin: 0 auto;
+  font-family: "League Spartan", sans-serif;
+  padding-block: 30px;
+}
+
+/* dark header start  */
+
+.dark-mode-header { display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.dark-theme p {
+  color: #FFE53D;
+}
+
+.dark-toogle {
+  background-color: #1E0936;
+  border: 3px solid #1E0936;
+
+}
+
+/* dark header end  */
+
+/* dark screen start  */
+
+.dark-mode-screen {
+  background-color: #1e0936;
+  width: 327px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.dark-mode-screen h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36.8px;
+  letter-spacing: -0.6666666865348816px;
+  padding-right: 24px;
+  text-align: right;
+  color: #ffe53d;
+  padding-block: 26px;
+}
+
+/* dark screen end  */
+
+/* dark keyboard start  */
+
+.dark-mode-keyboards {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  background-color: #1e0936;
+  padding: 24px;
+  margin: 0 auto;
+  width: 327px;
+  border-radius: 10px;
+  margin-bottom: 31px;
+}
+
+.dark-mode-keyboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  margin: 0 auto;
+}
+
+.dark-mode-keyboard button {
+  width: 60px;
+  padding-block: 13px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #ffe53d;
+  border-radius: 8px;
+  background-color: #331c4d;
+  border: none;
+  box-shadow: 0px -4px 0px 0px #881c9e inset;
+}
+
+.dark-mode-keyboard .dark-del {
+  background-color: #56077c;
+  color: #ffffff;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+}
+
+.dark-mode-keyboard-bottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.dark-mode-keyboard-bottom button {
+  width: 133px;
+  padding-block: 13px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+}
+
+.dark-reset {
+  background-color: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+}
+
+.dark-equal {
+  background-color: #00ded0;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+}
+
+/* dark keyboard end  */
+
+/*? dark mode end  */
+
+/*! mobil end  */
+
+/*! dekstop start  */
+
+/*? default mode start */
+
+@media (width > 1024px) {
+  .default-container {
+    background-color: #3a4663;
+    margin: 0 auto;
+    font-family: "League Spartan", sans-serif;
+    padding-block: 96px;
+  }
+
+  /* default header start  */
+
+  .default-header {
+    padding-bottom: 32px;
+    width: 533px;
+    margin: 0 auto;
+  }
+
+  /* default header end  */
+
+  /* default screen start  */
+
+  .default-screen {
+    background-color: #181f33;
+    width: 540px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  .default-screen h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 51.52px;
+    letter-spacing: -0.9333333373069763px;
+    text-align: right;
+    color: white;
+    padding-block: 26px;
+  }
+
+  /* default screen end  */
+
+  /* default keyboard start  */
+
+  .default-keyboards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #242d44;
+    padding: 24px;
+    margin: 0 auto;
+    width: 540px;
+    border-radius: 10px;
+    margin-bottom: 31px;
+  }
+
+  .default-keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .default-keyboard button {
+    width: 101px;
+    padding-block: 13px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36.8px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: center;
+    border-radius: 8px;
+    color: #434a59;
+  }
+
+  .default-keyboard button:hover {
+    background-color: #fffffe;
+  }
+
+  .default-keyboard .del {
+    background-color: #414e73;
+    color: #ffffff;
+  }
+
+  .default-keyboard .del:hover {
+    background-color: #a2b2e1;
+  }
+
+  .default-keyboard-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .default-keyboard-bottom button {
+    width: 227px;
+    padding-block: 13px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25.76px;
+    letter-spacing: -0.46666666865348816px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .reset {
+    background-color: #414e73;
+  }
+
+  .equal {
+    background-color: red;
+  }
+
+  .reset:hover {
+    background-color: #a2b2e1;
+  }
+
+  .equal:hover {
+    background-color: #f96b5b;
+  }
+
+  /* default keyboard end  */
+
+  /*? default mode end */
+
+  /*? light mode start  */
+
+  .light-mode-container {
+    background-color: #e6e6e6;
+    margin: 0 auto;
+    font-family: "League Spartan", sans-serif;
+    padding-block: 96px;
+  }
+
+  /* light header start  */
+
+  .light-mode-header {
+    padding-bottom: 32px;
+    width: 533px;
+    margin: 0 auto;
+  }
+
+  /* light header end  */
+
+  /* light screen start  */
+
+  .light-mode-screen {
+    background-color: #eeeeee;
+    width: 540px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  .light-mode-screen h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 51.52px;
+    letter-spacing: -0.9333333373069763px;
+    text-align: right;
+    color: #36362c;
+    padding-block: 26px;
+  }
+
+  /* light screen end  */
+
+  /* light keyboard start  */
+
+  .light-mode-keyboards {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background-color: #d2cdcd;
+    padding: 24px;
+    margin: 0 auto;
+    width: 540px;
+    border-radius: 10px;
+    margin-bottom: 31px;
+  }
+
+  .light-mode-keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .light-mode-keyboard button {
+    width: 101px;
+    padding-block: 13px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36.8px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: center;
+    color: #36362c;
+    border-radius: 8px;
+    background-color: #e5e4e1;
+  }
+
+  .light-mode-keyboard button:hover {
+    background-color: #ffffff;
+  }
+
+  .light-mode-keyboard .light-del {
+    background-color: #378187;
+    color: #ffffff;
+  }
+
+  .light-mode-keyboard .light-del:hover {
+    background-color: #62b5bc;
+  }
+
+  .light-mode-keyboard-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .light-mode-keyboard-bottom button {
+    width: 227px;
+    padding-block: 13px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25.76px;
+    letter-spacing: -0.46666666865348816px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .light-reset {
+    background-color: #378187;
+  }
+
+  .light-reset:hover {
+    background-color: #62b5bc;
+  }
+
+  .light-equal {
+    background-color: #c85402;
+  }
+
+  .light-equal:hover {
+    background-color: #ff8a38;
+  }
+
+  /* light keyboard end  */
+
+  /*? light mode end  */
+
+  /*? dark mode start  */
+
+  .dark-mode-container {
+    background-color: #17062a;
+    margin: 0 auto;
+    font-family: "League Spartan", sans-serif;
+    padding-block: 96px;
+  }
+
+  /* dark header start  */
+
+  .dark-mode-header {
+    padding-bottom: 32px;
+    width: 533px;
+    margin: 0 auto;
+  }
+
+  /* dark header end  */
+
+  /* dark screen start  */
+
+  .dark-mode-screen {
+    background-color: #1e0936;
+    width: 540px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+
+  .dark-mode-screen h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 51.52px;
+    letter-spacing: -0.9333333373069763px;
+    text-align: right;
+    color: #ffe53d;
+    padding-block: 26px;
+  }
+
+  /* dark screen end  */
+
+  /* dark keyboard start  */
+
+  .dark-mode-keyboards {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    background-color: #1e0936;
+    padding: 24px;
+    margin: 0 auto;
+    width: 540px;
+    border-radius: 10px;
+    margin-bottom: 31px;
+  }
+
+  .dark-mode-keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 0 auto;
+  }
+
+  .dark-mode-keyboard button {
+    width: 101px;
+    padding-block: 13px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36.8px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: center;
+    color: #ffe53d;
+    border-radius: 8px;
+    background-color: #331c4d;
+  }
+
+  .dark-mode-keyboard button:hover {
+    background-color: #6c34ac;
+  }
+
+  .dark-mode-keyboard .dark-del {
+    background-color: #56077c;
+    color: #ffffff;
+  }
+
+  .dark-mode-keyboard .dark-del:hover {
+    background-color: #8631af;
+  }
+
+  .dark-mode-keyboard-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .dark-mode-keyboard-bottom button {
+    width: 227px;
+    padding-block: 13px;
+    border-radius: 8px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25.76px;
+    letter-spacing: -0.46666666865348816px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .dark-reset {
+    background-color: #56077c;
+  }
+
+  .dark-reset:hover {
+    background-color: #8631af;
+  }
+
+  .dark-equal {
+    background-color: #00ded0;
+    color: #1a2327;
+  }
+
+  .dark-equal:hover {
+    background-color: #93fff8;
+  }
+
+  /* dark keyboard end  */
+
+  /*? dark mode end  */
+}
+
+/*! desktop end  */
